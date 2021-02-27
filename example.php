@@ -12,7 +12,7 @@ if ($_POST){
     echo "<h2>Uploaded files:</h2>";
     echo "<table border=\"2\" cellpadding=\"2\">";
 
-    echo "<tr><td>Name</td><td>Location</td><td>Content type</td><td>MD5</td><td>Size</tr>";
+    echo "<tr><td>Name</td><td>Location</td><td>Content type</td><td>MD5</td><td>Size</td></tr>";
 
 	for ($i=1;$i<=$slots;$i++){
 		$key = $header_prefix.$i;
@@ -23,7 +23,7 @@ if ($_POST){
 			$md5 = $_POST[$key."_md5"];
 			$size = $_POST[$key."_size"];
 
-            echo "<tr><td>$name</td><td>$tmp_name</td><td>$content_type</td><td>$md5</td><td>$size</td>";
+            echo "<tr><td>$name</td><td>$tmp_name</td><td>$content_type</td><td>$md5</td><td>$size</td></tr>";
 		}
 	}
 
