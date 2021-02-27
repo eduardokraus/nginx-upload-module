@@ -12,7 +12,7 @@ if ($_POST){
     echo "<h2>Uploaded files:</h2>";
     echo "<table border=\"2\" cellpadding=\"2\">";
 
-    echo "<tr><td>Name</td><td>Location</td><td>Content type</td><td>MD5</td><td>Size</tr>";
+    echo "<tr><td>Name</td><td>Location</td><td>Content type</td><td>MD5</td><td>Size</td></tr>";
 
 	for ($i=1;$i<=$slots;$i++){
 		$key = $header_prefix.$i;
